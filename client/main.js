@@ -15,11 +15,13 @@ function submitHandler(e) {
     e.preventDefault()
 
     let location = document.querySelector('#location')
+    let wonder = document.querySelector('#wonder')
     // let rating = document.querySelector('input[name="ratings"]:checked')
     let imageURL = document.querySelector('#img')
 
     let bodyObj = {
         location: location.value,
+        wonder: wonder.value,
         // rating: rating.value, 
         imageURL: imageURL.value
     }
@@ -27,6 +29,7 @@ function submitHandler(e) {
     createMovie(bodyObj)
 
     location.value = ''
+    wonder.value = ''
     // rating.checked = false
     imageURL.value = ''
 }
@@ -34,10 +37,11 @@ function submitHandler(e) {
 function createMovieCard(movie) {
     const movieCard = document.createElement('div')
     movieCard.classList.add('movie-card')
-
+    
     movieCard.innerHTML = `<img alt='movie cover' src=${movie.imageURL} class="movie-cover"/>
-    <p class="location
-    ">${movie.location}</p>
+    <p class="location">${movie.location}</p>
+    <p class="wonder">${movie.wonder}</p>
+
     <button onclick="deleteMovie(${movie.id})">delete</button>
     `
 

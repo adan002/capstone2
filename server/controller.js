@@ -11,11 +11,12 @@ module.exports = {
         res.status(200).send(movies)
     },
     createMovie: (req, res) => {
-        let { location, imageURL} = req.body
+        let { location, wonder, imageURL} = req.body
         let newMovie = {
             id: globalId,
-                location, 
-            imageURL
+                location,
+                wonder, 
+                imageURL
         }
         movies.push(newMovie)
         res.status(200).send(movies)

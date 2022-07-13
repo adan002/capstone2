@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:blanchedalmond
 }
 
 h1 {
@@ -18,11 +19,12 @@ h1 {
 }
 
 html { 
-    background: url(https://p4.wallpaperbetter.com/wallpaper/595/932/1002/clouds-sun-sunlight-sky-wallpaper-preview.jpg) no-repeat center center fixed; 
+    background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url(https://images.unsplash.com/photo-1564404821544-f2b09075c8aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE1fHx8ZW58MHx8fHw%3D&w=1000&q=80) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    /* background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%); */
   }
   
 
@@ -49,16 +51,19 @@ form {
     justify-content: space-evenly; 
     align-items: center;
     margin: 30px;
-    margin-left:150px
+    margin-left:150px;
+    /* color: white; */
 }
 
 button {
-    background-color:transparent;
-    width: 95px;
-    height: 25px;
+    background-color:
+    transparent;
+    width: 500px;
+    height: 32px;
     color: blanchedalmond;
-    border: none;
-    margin: 5px;
+    border: 1px solid black;;
+    margin: 0px;
+    display:inline-block;
 }
 
 input[type='text'] {
@@ -67,7 +72,11 @@ input[type='text'] {
     border:none;
     border-bottom: 2px solid #232323;
     color: black;
-    background-color: transparent;
+    background-color: black;
+
+}
+input::placeholder{
+    color:blanchedalmond;
 }
 
 /* #ratings-container {
