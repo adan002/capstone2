@@ -9,7 +9,7 @@ const errCallback = err => console.log(err.response.data)
 const getAllMovies = () => axios.get(baseURL).then(moviesCallback).catch(errCallback)
 const createMovie = body => axios.post(baseURL, body).then(moviesCallback).catch(errCallback)
 const deleteMovie = id => axios.delete(`${baseURL}/${id}`).then(moviesCallback).catch(errCallback)
-const updateMovie = (id, type) => axios.put(`${baseURL}/${id}`, {type}).then(moviesCallback).catch(errCallback)
+// const updateMovie = (id, type) => axios.put(`${baseURL}/${id}`, {type}).then(moviesCallback).catch(errCallback)
 
 function submitHandler(e) {
     e.preventDefault()

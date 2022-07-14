@@ -22,17 +22,30 @@
     word-spacing: -5px;
     text-shadow: rgb(0, 0, 0) 17px -5px 7px;
 }
+html { 
+    background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url(https://images.unsplash.com/photo-1564404821544-f2b09075c8aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE1fHx8ZW58MHx8fHw%3D&w=1000&q=80) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%); */
+  }
   
   
   body {
     min-height: 100vh;
     display: grid;
     place-items: center;
-    background: var(--clr-bg);
+    background: transparent;
     font-family: "Uncial Antiqua", cursive;
     color: hwb(121deg 70% 21%);
     padding-right: 10rem;
-  }
+    /* max-width: max-content; */
+    margin: auto;
+    margin: 50px 0;
+    padding: 0;
+    text-align: center;
+}
   
   .neon-button {
     font-size: 4rem;
